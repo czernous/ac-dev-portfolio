@@ -1,0 +1,135 @@
+/* Media Queries*/
+/* 1200px / 16px = 75em
+*/
+@media (max-width: 75em) {
+  html {
+    font-size: 65%;
+  }
+  #navbar .nav-links {
+    margin-left: 68%;
+  }
+  .about-wrapper {
+    .about-image {
+      img {
+        max-height: 25em;
+      }
+    }
+  }
+}
+
+/* 1024px / 16 = 64em */
+@media (max-width: 64em) {
+  .home {
+    font-size: 80%;
+    h1 {
+      max-width: 100%;
+    }
+  }
+  .about-wrapper {
+    .about-image {
+      img {
+        max-height: 25em;
+      }
+    }
+  }
+}
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 56%;
+  }
+  #navbar .nav-links {
+    display: none;
+  }
+  #side-menu-nav .nav-links li.primary {
+    display: flex;
+    flex-direction: column;
+  }
+  button.hamburger {
+    visibility: visible;
+  }
+}
+/* 768px / 16px = 48em */
+@media (max-width: 48.5em) {
+  .about-wrapper {
+    .about-content {
+      width: 65%;
+      p {
+        margin-bottom: 1.2rem;
+      }
+    }
+    .about-image {
+      width: 30%;
+      img {
+        max-height: 50em;
+        height: 100%;
+      }
+    }
+  }
+}
+/* 740px / 16px = 46.25em */
+@media (max-width: 46.25em) {
+  .home {
+    h1 {
+      font-size: 5rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+      margin: 1em 0;
+    }
+  }
+  .main-content:not(.home) {
+    padding: 0 1.5em;
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  .portfolio {
+    .project-grid {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+  .about-wrapper {
+    flex-direction: column-reverse;
+    .about-content {
+      width: 100%;
+      p {
+        margin: 1.2rem 0;
+      }
+    }
+    .about-image {
+      width: 100%;
+      img {
+        max-height: 20em;
+        object-fit: cover;
+      }
+    }
+  }
+  .card {
+    height: 350px;
+  }
+}
+/* 300px / 16px = 18.75em */
+@media (max-width: 18.75em) {
+  .home-wrapper {
+    margin: 0 auto;
+  }
+  .home {
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  .main-content:not(.home) {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  .portfolio {
+    .project-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
+}

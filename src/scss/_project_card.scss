@@ -1,0 +1,81 @@
+.card {
+  height: 300px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  &:hover,
+  &:focus {
+    .project-desc {
+      height: 100%;
+    }
+  }
+}
+.card img {
+  height: 100%;
+  object-fit: cover;
+}
+.project-desc {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  background: $grape;
+  overflow: hidden;
+  padding: 0 1.5rem;
+  transition: height 1s cubic-bezier(0.47, 0, 0.745, 0.715);
+  &:hover,
+  &:focus {
+    height: 100%;
+  }
+}
+
+.project-desc a,
+p:not(.project-title) {
+  font-size: 80%;
+}
+.project-desc a {
+  margin-right: 2rem;
+}
+.project-title {
+  text-align: center;
+  margin: 1rem auto;
+  position: relative;
+  &:after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    top: 125%;
+    left: 10%;
+    width: 80%;
+    background: $light-pink;
+  }
+}
+.desc-wrapper {
+  display: inherit;
+  flex-direction: row;
+}
+.desc-content {
+  width: 85%;
+  transition: nav-bg-slide-up;
+}
+.desc-heading {
+  font-weight: 700;
+  margin: 1rem 0;
+}
+.stack-icons {
+  width: 15%;
+  height: 90%;
+  margin: 2% -1% 0 1%;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.stack-icons svg {
+  fill: $light-pink;
+  margin: 0 auto 1rem auto;
+  height: 4rem;
+}

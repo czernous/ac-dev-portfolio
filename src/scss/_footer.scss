@@ -1,0 +1,23 @@
+.footer {
+  padding: 1.5em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .social {
+    display: inherit;
+    margin: 1rem 0;
+    li {
+      height: 1rem;
+      margin: 0 0.5rem;
+      svg {
+        fill: $light-pink;
+        height: 2rem;
+      }
+    }
+  }
+  .copyright {
+    margin-top: 1rem;
+    font-size: 80%;
+  }
+}

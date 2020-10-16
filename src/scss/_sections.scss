@@ -1,0 +1,131 @@
+/* sections base styles */
+.home,
+.portfolio,
+.contact,
+.about {
+  display: none;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  h1 {
+    color: $lavender;
+  }
+}
+.home {
+  width: 100%;
+  height: 100vh;
+  padding: 0 4.5rem;
+}
+.main-content:not(.home),
+.home-wrapper {
+  max-width: 1400px;
+  width: 100%;
+  margin: 4em auto 0 auto;
+}
+.main-content:not(.home) {
+  padding: 0 3em;
+}
+/* home section */
+.home {
+  justify-content: center;
+  align-items: left;
+  background: $dark-purp
+    url(https://www.transparenttextures.com/patterns/axiom-pattern.png) repeat;
+  h1 {
+    font-family: 'Cinzel Decorative', sans-serif;
+    font-size: 9rem;
+    font-weight: 400;
+    line-height: 0.9;
+    color: $light-pink;
+    margin: 2rem 0;
+    max-width: 80%;
+  }
+  h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.1;
+    color: $lavender;
+    padding-left: 0.5rem;
+    margin: 5rem 0;
+  }
+  p {
+    font-size: 2rem;
+    font-weight: 200;
+    color: $light-pink;
+    padding: 0.5em 0 0 1.4rem;
+  }
+  button {
+    padding: 1.5rem;
+    max-width: 25rem;
+  }
+}
+// projects
+.portfolio {
+  .btn-container {
+    margin: 1em auto;
+    button {
+      margin: 0.5em;
+    }
+  }
+  .project-grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+// about
+.about-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2em;
+  .about-content {
+    width: 55%;
+    p {
+      margin-bottom: 1.2rem;
+    }
+  }
+  .about-image {
+    width: 40%;
+
+    img {
+      max-width: 100%;
+      max-height: 20em;
+      object-fit: cover;
+      box-shadow: #111 0 0 10px;
+    }
+  }
+}
+// contact
+.contact {
+  flex-wrap: wrap;
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 30em;
+    margin-top: 2em;
+    button {
+      width: 100%;
+    }
+  }
+  .form-container > form *:not(button) {
+    margin: 2% 0;
+    color: $off-white;
+  }
+  .form-container > form input,
+  .form-container > form textarea {
+    width: 100%;
+    background: $grape;
+    border: none;
+    margin-bottom: 1em;
+    padding: 1rem;
+    &::placeholder {
+      color: fade-out($off-white, 0.6);
+    }
+  }
+  .form-container > form textarea {
+    max-height: 50em;
+    height: 10em;
+    resize: vertical;
+  }
+}

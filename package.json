@@ -1,0 +1,41 @@
+{
+  "name": "AC-WD-PORTFOLIO",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rm -rf ./development && rm -rf ./.cache && parcel public/index.html --out-dir development -p 3000",
+    "build": "parcel build public/index.html --out-dir dist --public-url ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "@babel/runtime-corejs3": "^7.12.1",
+    "autoprefixer": "^9.7.3",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "parcel-bundler": "^1.12.4",
+    "postcss": "^7.0.35",
+    "postcss-load-config": "^2.1.2",
+    "postcss-modules": "^3.2.2",
+    "prettier": "^2.1.2",
+    "sass": "^1.27.0",
+    "sass-autoprefixer": "^1.0.1"
+  },
+  "transpileDependencies": [
+    "debug"
+  ],
+  "dependencies": {
+    "bourbon": "^7.0.0"
+  }
+}
