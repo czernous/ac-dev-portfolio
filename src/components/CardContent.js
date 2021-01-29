@@ -1,8 +1,12 @@
 import {
-  AdobePhotoshop, AdobeXd,
-  Bootstrap, Html5,
+  AdobePhotoshop,
+  Angular,
+  AdobeXd,
+  Bootstrap,
+  Html5,
   Javascript,
-  NodeJs, Sass
+  NodeJs,
+  Sass,
 } from './Icons';
 const CreateContent = () => {
   const content = [
@@ -13,7 +17,8 @@ const CreateContent = () => {
       desc: `This project is a landing page for Online English tutoring service. It features an integrated Mailchimp sign-up form and a contact form`,
       myWork:
         'I created a new design and prototype in Adobe XD, developed the website, and deployed it to Netlify.',
-      image: '"https://phounton.sirv.com/Images/ac-dev-portfolio/img/plato_english.jpg?format=webp&webp.fallback=jpg"',
+      image:
+        '"https://phounton.sirv.com/Images/ac-dev-portfolio/img/plato_english.jpg?format=webp&webp.fallback=jpg"',
       myStack: `${AdobeXd()}
       ${Html5()}
       ${Sass()}
@@ -29,7 +34,8 @@ const CreateContent = () => {
       desc: `This landing page was created for an e-bike startup. It features a product slider, embedded video which starts and stops automatically, dynamically generated reviews, etc.`,
       myWork:
         'I created a new design and prototype in Adobe XD, and developed the website.',
-      image: '"https://phounton.sirv.com/Images/ac-dev-portfolio/img/switch_landing.jpg?format=webp&webp.fallback=jpg"',
+      image:
+        '"https://phounton.sirv.com/Images/ac-dev-portfolio/img/switch_landing.jpg?format=webp&webp.fallback=jpg"',
       myStack: `${AdobeXd()}
       ${Html5()}
       ${Sass()}
@@ -44,7 +50,8 @@ const CreateContent = () => {
       category: 'design',
       desc: `This project is a service website for a local plumber. It includes a home, about, service and contact pages as well as portfolio. The design is available for sale.`,
       myWork: 'I created new design and prototype in Adobe XD.',
-      image: '"https://phounton.sirv.com/Images/ac-dev-portfolio/img/plumbing_site.jpg?format=webp&webp.fallback=jpg"',
+      image:
+        '"https://phounton.sirv.com/Images/ac-dev-portfolio/img/plumbing_site.jpg?format=webp&webp.fallback=jpg"',
       myStack: `${AdobeXd()}`,
 
       github: '', //`<a href="https://www.google.com" class="project-link" rel="noopener" target="_blank">View code</a>`,
@@ -58,7 +65,8 @@ const CreateContent = () => {
       desc: `This project is a portfolio I did for a copywriter. It includes a home, about, and contact pages as well as portfolio.`,
       myWork:
         'I created new design in Adobe Photoshop and developed the website.',
-      image: '"https://phounton.sirv.com/Images/ac-dev-portfolio/img/cw-portfolio.jpg?format=webp&webp.fallback=jpg"',
+      image:
+        '"https://phounton.sirv.com/Images/ac-dev-portfolio/img/cw-portfolio.jpg?format=webp&webp.fallback=jpg"',
       myStack: `${AdobePhotoshop()}
       ${Html5()}
       ${Sass()}
@@ -72,9 +80,9 @@ const CreateContent = () => {
       title: 'Book app',
       category: 'full_stack',
       desc: `This website connects to the New York Times API and pulls data on the current bestselling books.`,
-      myWork:
-        'I created Express webserver with GraphQL and Apollo',
-      image: '"https://phounton.sirv.com/Images/ac-dev-portfolio/img/getbestsellers.herokuapp.com_books.png?format=webp&webp.fallback=jpg"',
+      myWork: 'I created Express webserver with GraphQL and Apollo',
+      image:
+        '"https://phounton.sirv.com/Images/ac-dev-portfolio/img/getbestsellers.herokuapp.com_books.png?format=webp&webp.fallback=jpg"',
       myStack: `${NodeJs()}
       ${Html5()}
       ${Bootstrap()}
@@ -82,6 +90,23 @@ const CreateContent = () => {
 
       github: `<a href="https://github.com/czernous/NYT_BESTSELLERS" class="project-link" rel="noopener" target="_blank">View code</a>`, //,
       live: 'https://getbestsellers.herokuapp.com/books',
+    },
+    {
+      id: 7,
+      title: 'MEAN RSVP app',
+      category: 'full_stack',
+      desc: `This app allows users create and edit events, and RSVP to events. It supports user authentication provided by Auth0.`,
+      myWork:
+        'I created the app using Angular 11, Express and MongoDB. I also set up NGINX server with reverse proxy.',
+      image:
+        '"https://phounton.sirv.com/Images/ac-dev-portfolio/img/34.71.25.13_admin.png"',
+      myStack: `${NodeJs()}
+      ${Html5()}
+      ${Bootstrap()}
+      ${Angular()}`,
+
+      github: ``, //,
+      live: 'https://34.71.25.13/',
     },
   ];
   return content;
