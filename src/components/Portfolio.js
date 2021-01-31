@@ -3,7 +3,6 @@ import CreateContent from './CardContent';
 const Portfolio = () => {
   // Generate cards from array
   const projects = document.querySelector('#project-grid');
-
   const displayProjectInfo = (projectInfo) => {
     let displayProject = projectInfo.map(function (item) {
       return `<div class="card">
@@ -42,8 +41,15 @@ const Portfolio = () => {
   const displayProjectButtons = () => {
     const categories = CreateContent().reduce(
       function (values, item) {
-        if (!values.includes(item.category)) {
-          values.push(item.category);
+        let categoryName = item.category;
+        if (typeof categoryName === 'object') {
+          for (const element of categoryName) {
+            !values.includes(element) ? values.push(element) : null;
+          }
+        }
+        if (!values.includes(categoryName)) {
+          values.push(categoryName);
+          (typeof categoryName === 'object') ? values.pop(categoryName) : null;
         }
         return values;
       },
@@ -62,7 +68,7 @@ const Portfolio = () => {
       btn.addEventListener('click', function (e) {
         const category = e.currentTarget.dataset.id;
         const projectCategory = CreateContent().filter(function (projectItem) {
-          if (projectItem.category === category) {
+          if (projectItem.category.includes(category)) {
             return projectItem;
           }
         });

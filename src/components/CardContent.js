@@ -73,7 +73,7 @@ const CreateContent = () => {
       ${Javascript()}`,
 
       github: '', //`<a href="https://www.google.com" class="project-link" rel="noopener" target="_blank">View code</a>`,
-      live: 'https://www.rc-copywriting.imfast.io',
+      live: '',
     },
     {
       id: 6,
@@ -94,19 +94,33 @@ const CreateContent = () => {
     {
       id: 7,
       title: 'MEAN RSVP app',
-      category: 'full_stack',
+      category: ['full_stack', 'angular'],
       desc: `This app allows users create and edit events, and RSVP to events. It supports user authentication provided by Auth0.`,
       myWork:
-        'I created the app using Angular 11, Express and MongoDB. I also set up NGINX server with reverse proxy.',
+        'I created the app using Angular 11, Express, and MongoDB. I also set up NGINX server with reverse proxy.',
       image:
         '"https://phounton.sirv.com/Images/ac-dev-portfolio/img/34.71.25.13_admin.png"',
       myStack: `${NodeJs()}
       ${Html5()}
       ${Bootstrap()}
       ${Angular()}`,
-
       github: ``, //,
       live: 'https://34.71.25.13/',
+    },
+    {
+      id: 8,
+      title: 'Express blog app',
+      category: 'full_stack',
+      desc: `A fully functional blog application. Available for use free of charge.`,
+      myWork:
+        'I created this app using Express, MongoDB, SemanticUI, PassportJS, etc. Full description is available in the repository Readme file.',
+      image:
+        '"https://phounton.sirv.com/Images/ac-dev-portfolio/img/express_blog.png"',
+      myStack: `${NodeJs()}
+      ${Html5()}
+      ${Javascript()}`,
+      github: `<a href="https://github.com/czernous/express-blog-app" class="project-link" rel="noopener" target="_blank">View code</a>`, //,
+      live: `https://github.com/czernous/express-blog-app`,
     },
   ];
   return content;

@@ -92,9 +92,7 @@ select {
   padding: 15px 15px;
   display: inline-block;
   cursor: pointer;
-  transition-property: opacity, -webkit-filter;
   transition-property: opacity, filter;
-  transition-property: opacity, filter, -webkit-filter;
   transition-duration: 0.15s;
   transition-timing-function: linear;
   font: inherit;
@@ -1378,9 +1376,6 @@ button.hamburger:active {
   color: rgba(246, 227, 234, 0.4);
 }
 .contact .form-container > form input:-ms-input-placeholder, .contact .form-container > form textarea:-ms-input-placeholder {
-  color: rgba(246, 227, 234, 0.4);
-}
-.contact .form-container > form input::-ms-input-placeholder, .contact .form-container > form textarea::-ms-input-placeholder {
   color: rgba(246, 227, 234, 0.4);
 }
 .contact .form-container > form input::placeholder,
